@@ -1,40 +1,50 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
- 
- # Packages #
- ############
- # it's better to unpack these files and commit the raw source
- # git has its own built in compression methods
- *.7z
- *.dmg
- *.gz
- *.iso
- *.jar
- *.rar
- *.tar
- *.zip
-  
-  # Logs and databases #
-  ######################
-  *.log
-  *.sql
-  *.sqlite
-   
-   # OS generated files #
-   ######################
-   .DS_Store
-   .DS_Store?
-   ._*
-   .Spotlight-V100
-   .Trashes
-   ehthumbs.db
-   Thumbs.db
+# Exclude the Podspecs
+Pods/*
+Podfile.lock
 
-   *.pyc
-   *.pyo
+# Exclude any PSD/AI source
+#*.psd
+#*.ai
+
+# Exclude generated files
+VersionX-revision.h
+
+# Exclude the build products
+build/*
+*.[oa]
+ 
+# Exclude temp nibs and swap files
+*~.nib
+*.swp
+*~
+
+# Sparkle distribution Private Key (Don't check me in!)
+dsa_priv.pem
+ 
+# Exclude OS X folder attributes
+.DS_Store
+ 
+# Exclude user-specific XCode 3 and 4 files
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcuserdata
+xcuserdata/
+*/xcuserdata/
+
+# Exclude ReleaseNotes
+RELEASENOTES
+RELEASENOTES.*
+release_notes
+release_notes.*
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+*.pyc
+*.pyo
